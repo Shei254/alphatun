@@ -5,7 +5,7 @@
 #include "defines.h"
 
 const char *argp_program_version = "alphatun-" VERSION_STR;
-const char *argp_program_bug_address = "<prof7bit@gmail.com>";
+const char *argp_program_bug_address = "<github.com/Shei254>";
 static char doc[] = " \
 creates a reverse UDP tunnel for an UDP srvice behind NAT\n\n \
 Example usage on the inside:\n \
