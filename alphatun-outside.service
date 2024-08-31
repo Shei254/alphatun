@@ -1,0 +1,18 @@
+[Unit]
+Description=reverse UDP tunnel (outside agent)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=60
+
+# adjust the ExecStart line to match your needs
+# -l is the UDP port where the outside agent should listen
+# for example:
+# ExecStart=alphatun -l 51820
+ExecStart=alphatun -l {{LISTEN}}
+
+[Install]
+WantedBy=multi-user.target
